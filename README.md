@@ -1,8 +1,8 @@
-# Title Project
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# this is my title
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  this is a big fat description
+  this is my description
   ## Table of Contents
   
   * [Installation](#installation)
@@ -13,27 +13,25 @@
   * [Questions](#questions)
 
   ## Installation
-  this is how you install
+  these are instractions on install
 
   ## Usage
-  this is how you use
+  these are useage ins
 
   ## License
   
-## License
+This project is licensed under the MIT license.
 
-This project is licensed under the Apache 2.0 license.
-
-For more information about the license, please refer to the [License]() documentation.
+For more information about the license, please refer to the [License](https://opensource.org/licenses/MIT) documentation.
 
 
   ## Contributing
   no CG
 
   ## Tests
-  this is test 10
+  test 15
 
   ## Questions
-  undefined
-
+  You can find more of my work at [km](https://github.com/km/).
+  If you have any questions about the repo, open an issue or contact me directly at [email@email.com](mailto:email@email.com). 
   

@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// Includes packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
+// An array of questions for user input
 const promptUser = () => {
   return inquirer.prompt([
     {
@@ -53,7 +53,7 @@ const promptUser = () => {
       },
   ]);
 };
-
+// Function that returns a license badge based on which license is passed, If there is no license, returns an empty string
 function renderLicenseBadge(license) {
   if (license === 'MIT') {
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
@@ -68,25 +68,18 @@ function renderLicenseBadge(license) {
   }
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function that returns the license link, If there is no license, returns an empty string
 function renderLicenseLink(license) {
-  if (!license) {
+  if (license === 'MIT') {
+    return 'https://opensource.org/licenses/MIT';
+  } else if (license === 'Apache 2.0') {
+    return 'https://opensource.org/licenses/Apache-2.0';
+  } else if (license === 'GPL 3.0') {
+    return 'https://www.gnu.org/licenses/gpl-3.0';
+  } else if (license === 'none') {
     return '';
-  }
-
-  switch (license.toLowerCase()) {
-    
-    case 'MIT':
-      return 'https://opensource.org/licenses/MIT';
-    case 'Apache 2.0':
-      return 'https://opensource.org/licenses/Apache-2.0';
-    case 'GPL 3.0':
-      return 'https://www.gnu.org/licenses/gpl-3.0.en.html';
-    case 'none':
-      return 'No License Chosen!';
-    default:
-      return '';
+  } else {
+    return '';
   }
 }
 
@@ -100,8 +93,6 @@ function renderLicenseSection(license) {
   const licenseText = `This project is licensed under the ${license} license.`;
 
   return `
-## License
-
 ${licenseText}
 
 For more information about the license, please refer to the [License](${renderLicenseLink(license)}) documentation.
@@ -163,13 +154,3 @@ const init = () => {
 
 // Function call to initialize app
 init();
-
-
-// // TODO: Create an array of questions for user input
-// const questions = [];
-// {
-    //   type: 'checkbox',
-    //   message: 'What languages do you know?',
-    //   name: 'stack',
-    //   choices: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
-    // },
