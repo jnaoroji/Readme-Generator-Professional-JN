@@ -1,26 +1,39 @@
-# this is the title
+# Title Project
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## Description
-this is description
+  ## Description
+  this is a big fat description
+  ## Table of Contents
+  
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
-## Table of Contents
-this is description
+  ## Installation
+  this is how you install
 
-## Installation
-these are the instructions
+  ## Usage
+  this is how you use
 
-## Usage
-to use please do this
+  ## License
+  
+## License
 
-## Licence
-undefined
+This project is licensed under the Apache 2.0 license.
 
-## Contributing
-these are contributiong 
+For more information about the license, please refer to the [License]() documentation.
 
-## Tests
-this is test 6
 
-## Questions
-undefined
+  ## Contributing
+  no CG
 
+  ## Tests
+  this is test 10
+
+  ## Questions
+  undefined
+
+  
