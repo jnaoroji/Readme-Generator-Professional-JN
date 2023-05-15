@@ -8,22 +8,22 @@ const promptUser = () => {
     {
       type: 'input',
       name: 'title',
-      message: 'What is the title of your Readme file?',
+      message: 'What is the title of your Project?',
     },
     {
       type: 'input',
       name: 'description',
-      message: 'Describe your Readme file?',
+      message: 'Provide a brief description of your Project',
     },
     {
       type: 'input',
       name: 'install',
-      message: 'What are the instructions for installation of your application?',
+      message: 'What command should you run for installation of your application?',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'What are the usage instructions for your application?',
+        message: 'Are there any usage instructions for your application?',
     },
     {
       type: 'input',
@@ -33,11 +33,11 @@ const promptUser = () => {
     {
       type: 'input',
       name: 'test',
-      message: 'Are there any test instructions for your application?',
+      message: 'What command can be run to test your application?',
     },
     {
       type: 'list',
-      message: 'Which licence would you like to include?',
+      message: 'Which license would you like to include?',
       name: 'license',
       choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'none'],
     },
@@ -83,8 +83,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Function that returns the license section of README, If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (!license) {
     return '';
@@ -99,7 +98,7 @@ For more information about the license, please refer to the [License](${renderLi
 `;
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 
 const generateMarkdown = ({ title, description,install,usage,license, contribution, test, github, email }) => {
   return `# ${title}
@@ -136,12 +135,14 @@ const generateMarkdown = ({ title, description,install,usage,license, contributi
   If you have any questions about the repo, open an issue or contact me directly at [${email}](mailto:${email}). 
   `
 };
-// // TODO: Create a function to write README file
+// Function that writes README file
 
 const writeToFile = (fileName, data) => {
-  return fs.promises.writeFile(fileName, data);
+  const filePath = './generate' + fileName; // changed the file path as there are 2 readme.md files for this project
+  return fs.promises.writeFile(filePath, data);
 };
-// TODO: Create a function to initialize app
+
+// Function to initialize app
 const init = () => {
   promptUser()
     .then((answers) => {
