@@ -25,8 +25,7 @@ The following screenshot shows an example of a dynamically generated Readme.md b
 
 
 Here is a link to the walkthrough video that demonstrates the functionality of the README generator:
-https://drive.google.com/file/d/1CRSt6ZCEtf7GvZLW4MRZSKXuxCW3mfQA/view?usp=sharing
-
+https://youtu.be/P5iSYlr-sQc 
 
 
 
